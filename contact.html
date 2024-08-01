@@ -11,6 +11,15 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
+  <style>
+    .my-image {
+        width: 100%;
+        height: auto; /* Ensure the image scales proportionally */
+    }
+    .text-container {
+        padding: 16px;
+    }
+</style>
 </head>
 <body>
 <!--Header Section-->
@@ -24,19 +33,57 @@
   <a href="./legacy.html" class="w3-bar-item w3-button w3-mobile">Legacy</a>
 </nav>
 
-  <section id="contact">
-    <h2>Contact us today, we are here to help!</h2>
-    <img src="./images/help.jpg" alt="team.jpg" style="float:left">
-    <h3>Phone: </h3>
-    <p>Call us at 1(916)539-8544 for immediate assistance. Our friendly representatives are available 9am-5pm to address your needs.</p>
-    <h3>Email: </h3>
-    <p>Send us an email at <a href="mailto:info@goldenstateshootingcenter.com">info@goldenstateshootingcenter.com</a>. We strive to respond to all inquiries within 24 hours.</p>
-    <h3>Visit Us: </h3>
-    <p>Feel free to stop by our office at <a href="https://maps.app.goo.gl/BxK1hiF4aShYFtM38">5393 Waltz Rd, Rio Oso, CA 95674</a>. Our team is eager to assist you in person.</p>
-    <p>Your Satisfaction is Our Priority, Getting you on target is Our Mission!  We hope to see you soon.</p>
+<div class="w3-row">
+  <!-- Text Column -->
+  <div class="w3-col l6 m6 s12 text-container">
+    <h5>Contact us today, we are here to help!</h5>
+    <div class="w3-light-grey">
+      <button onclick="myFunction('Phone')" class="w3-button w3-block">
+        Phone
+      </button>
+      <div id="Phone" class="w3-hide">
+        <p>Call us at 1(916)539-8544 for assistance.  Our friendly representatives are available from 9am-5pm to address your needs.</p>
+      </div>
+    </div> 
+    <div class="w3-light-grey">
+      <button onclick="myFunction('eMail')" class="w3-button w3-block">
+        eMail
+      </button>
+      <div id="eMail" class="w3-hide">
+        <p>Send us an email at <a href="mailto:info@goldenstateshootingcenter.com">info@goldenstateshootingcenter.com</a>. We strive to respond to all inquiries within 24 hours.</p>
+      </div>
+    </div> 
+    <div class="w3-light-grey">
+      <button onclick="myFunction('Address')" class="w3-button w3-block">
+        Address
+      </button>
+      <div id="Address" class="w3-hide">
+        <p>Feel free to stop by our office at <a href="https://maps.app.goo.gl/BxK1hiF4aShYFtM38">5393 Waltz Rd, Rio Oso, CA 95674</a>. Our team is eager to assist you in person.</p>
+      </div>
+    </div> 
+</div>
+  <!-- Image Column -->
+  <div class="w3-col l6 m6 s12">
+    <img src="./images/help.jpg" alt="team.jpg" class="my-image">
+  </div>
 
+  
+</div>
+
+
+
+  
   </section>
-
+  <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
    
   <footer>
     <p>&copy; 2024 Shooting Center. All rights reserved.</p>

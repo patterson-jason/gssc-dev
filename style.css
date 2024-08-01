@@ -9,7 +9,7 @@ body {
   }
   
   header {
-    background-image: url('./images/background.jpg');
+    background-color:#333;
     padding: 15px 20px;
     text-align: center;
   }

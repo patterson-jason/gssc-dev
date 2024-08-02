@@ -34,16 +34,6 @@
     <a href="./legacy.html" class="w3-bar-item w3-button">Legacy</a>
 </div>
 
-<script>
-function toggleMenu() {
-  var x = document.getElementById("collapsibleMenu");
-  if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-  } else { 
-      x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 
 
     <section id="legacy">
@@ -63,7 +53,18 @@ function toggleMenu() {
 </p>
     </p>
     </section>
-  <footer>
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("collapsibleMenu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      </script>
+      
+    <footer>
     <p>&copy; 2024 Shooting Center. All rights reserved.</p>
   </footer>
 </body>

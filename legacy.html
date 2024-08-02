@@ -17,34 +17,14 @@
   <header class="w3-container w3-dark-grey w3-padding" id="myHeader">
     <img src="./images/logo.png" alt="Shooting Center Logo" class="w3-bar-item">
   </header>
-
- <!-- Navigation Bar -->
- <div class="w3-bar w3-theme">
-  <a href="./index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-  <a href="./calendar.html" class="w3-bar-item w3-button w3-mobile">Events</a>
-  <a href="./contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
-  <a href="./legacy.html" class="w3-bar-item w3-button w3-mobile">Legacy</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="./calendar.html" class="w3-bar-item w3-button">Events</a>
+  <a href="./contact.html" class="w3-bar-item w3-button">Contact</a>
+  <a href="./legacy.html" class="w3-bar-item w3-button">Legacy</a>
 </div>
-
-<div id="menu" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
-  <a href="./index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-  <a href="./calendar.html" class="w3-bar-item w3-button w3-mobile">Events</a>
-  <a href="./contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
-  <a href="./legacy.html" class="w3-bar-item w3-button w3-mobile">Legacy</a>
-</div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("menu");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
     <section id="legacy">
     <h5>The Legacy of Coon Creek and our Vision for Golden State Shooting Center</h5>
     <img src="./images/Logotransfer.png" alt="logos.png" style="float:right">
@@ -65,5 +45,14 @@ function myFunction() {
     <footer>
     <p>&copy; 2024 Shooting Center. All rights reserved.</p>
   </footer>
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
 </body>
 </html>

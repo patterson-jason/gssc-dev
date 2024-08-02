@@ -26,13 +26,27 @@
   <header class="w3-container w3-dark-grey w3-padding" id="myHeader">
     <img src="./images/logo.png" alt="Shooting Center Logo" class="w3-bar-item">
   </header>
-  <!-- Navigation Bar -->
-  <nav class="w3-bar w3-theme">
-    <a href="./index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-    <a href="./calendar.html" class="w3-bar-item w3-button w3-mobile">Events</a>
-    <a href="./contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
-    <a href="./legacy.html" class="w3-bar-item w3-button w3-mobile">Legacy</a>
-  </nav>
+ <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="./calendar.html" class="w3-bar-item w3-button">Events</a>
+  <a href="./contact.html" class="w3-bar-item w3-button">Contact</a>
+  <a href="./legacy.html" class="w3-bar-item w3-button">Legacy</a>
+</div>
+<!-- Page Content -->
+<div class="w3-theme">
+  <button class="w3-button w3-theme w3-xlarge" onclick="w3_open()">☰</button>
+</div>
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
 
 <div class="w3-row">
   <!-- Text Column -->

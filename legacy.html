@@ -25,6 +25,23 @@
   <a href="./contact.html" class="w3-bar-item w3-button">Contact</a>
   <a href="./legacy.html" class="w3-bar-item w3-button">Legacy</a>
 </div>
+<!-- Page Content -->
+<div class="w3-theme">
+  <button class="w3-button w3-theme w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>Legacy</h1>
+  </div>
+</div>
+
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
     <section id="legacy">
     <h5>The Legacy of Coon Creek and our Vision for Golden State Shooting Center</h5>
     <img src="./images/Logotransfer.png" alt="logos.png" style="float:right">
@@ -45,14 +62,6 @@
     <footer>
     <p>&copy; 2024 Shooting Center. All rights reserved.</p>
   </footer>
-  <script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-    
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    </script>
+
 </body>
 </html>

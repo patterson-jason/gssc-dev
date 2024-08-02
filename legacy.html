@@ -19,7 +19,7 @@
   </header>
 
  <!-- Navigation Bar -->
- <div class="w3-bar w3-red">
+ <div class="w3-bar w3-theme">
   <a href="./index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
   <a href="./calendar.html" class="w3-bar-item w3-button w3-mobile">Events</a>
   <a href="./contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
@@ -27,7 +27,7 @@
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 </div>
 
-<div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+<div id="menu" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
   <a href="./index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
   <a href="./calendar.html" class="w3-bar-item w3-button w3-mobile">Events</a>
   <a href="./contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
@@ -36,7 +36,7 @@
 
 <script>
 function myFunction() {
-  var x = document.getElementById("demo");
+  var x = document.getElementById("menu");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else { 

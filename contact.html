@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="./style.css">
 <style>.w3-allerta {font-family: "Allerta Stencil", Sans-serif;}</style>
 <style>img {max-width: 60%; height: auto; border-radius: 10%;}</style>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
 <!--Header Section-->
@@ -32,16 +31,6 @@
 <div class="w3-theme">
   <button class="w3-button w3-theme w3-xlarge" onclick="w3_open()">☰</button>
 </div>
-<script>
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-  }
-  
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
-  </script>
-
 <div class="w3-row w3-center l6 m9 s12">
   <!-- Text Column -->
   <div class="w3-container w3-mobile w3-center">
@@ -82,19 +71,31 @@
 
   
   </section>
-  <script>
-    function myFunction(id) {
-      var x = document.getElementById(id);
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-    </script>
+  
    
    <footer class="w3-container w3-theme">
     <p>&copy; 2024 Golden State Shooting Center. All rights reserved.</p>
   </footer>
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+
+<script>
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </body>
 </html>

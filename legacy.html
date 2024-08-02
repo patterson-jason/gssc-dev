@@ -24,6 +24,27 @@
     <a href="./contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
     <a href="./legacy.html" class="w3-bar-item w3-button w3-mobile">Legacy</a>
   </nav>
+
+<!-- Collapsible Menu -->
+<div id="collapsibleMenu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+  <a href="./index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+    <a href="./calendar.html" class="w3-bar-item w3-button w3-mobile">Events</a>
+    <a href="./contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+    <a href="./legacy.html" class="w3-bar-item w3-button w3-mobile">Legacy</a>
+</div>
+
+<script>
+function toggleMenu() {
+  var x = document.getElementById("collapsibleMenu");
+  if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+  } else { 
+      x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
     <section id="legacy">
     <h5>The Legacy of Coon Creek and our Vision for Golden State Shooting Center</h5>
     <img src="./images/Logotransfer.png" alt="logos.png" style="float:right">
